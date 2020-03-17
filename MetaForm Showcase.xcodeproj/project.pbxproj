@@ -49,6 +49,7 @@
 		7E52753C2420F71B0075AB3D /* MetaForm ShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MetaForm ShowcaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5275402420F71B0075AB3D /* MetaForm_ShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaForm_ShowcaseUITests.swift; sourceTree = "<group>"; };
 		7E5275422420F71B0075AB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E52754E2420F7410075AB3D /* swift-metaform */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "swift-metaform"; path = "../../swift-metaform"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 				7E5275342420F71B0075AB3D /* MetaForm ShowcaseTests */,
 				7E52753F2420F71B0075AB3D /* MetaForm ShowcaseUITests */,
 				7E52751C2420F71A0075AB3D /* Products */,
+				7E52754E2420F7410075AB3D /* swift-metaform */,
 			);
 			sourceTree = "<group>";
 		};
