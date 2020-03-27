@@ -7,10 +7,21 @@
 //
 
 import SwiftUI
+import MetaForm
 
 struct ContentView: View {
+    @EnvironmentObject var applicationState: ApplicationState
+    
     var body: some View {
-        Text("Hello, World!")
+        loadForm()
+        return Text("Hello, World!")
+    }
+    
+    func loadForm() {
+        if applicationState.currentForm == nil {
+            let form = MFForm.createSimpleFormWith(name: "test", title: "Form Title")
+            applicationState.currentForm = form
+        }
     }
 }
 

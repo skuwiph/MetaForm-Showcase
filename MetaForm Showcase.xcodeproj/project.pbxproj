@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E31FE21242CE2F20077FF5F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E31FE20242CE2F20077FF5F /* IQKeyboardManagerSwift */; };
 		7E52751F2420F71A0075AB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52751E2420F71A0075AB3D /* AppDelegate.swift */; };
 		7E5275212420F71A0075AB3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5275202420F71A0075AB3D /* SceneDelegate.swift */; };
 		7E5275232420F71A0075AB3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5275222420F71A0075AB3D /* ContentView.swift */; };
@@ -15,6 +16,10 @@
 		7E52752B2420F71B0075AB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5275292420F71B0075AB3D /* LaunchScreen.storyboard */; };
 		7E5275362420F71B0075AB3D /* MetaForm_ShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5275352420F71B0075AB3D /* MetaForm_ShowcaseTests.swift */; };
 		7E5275412420F71B0075AB3D /* MetaForm_ShowcaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5275402420F71B0075AB3D /* MetaForm_ShowcaseUITests.swift */; };
+		7E527551242108E40075AB3D /* MetaForm in Frameworks */ = {isa = PBXBuildFile; productRef = 7E527550242108E40075AB3D /* MetaForm */; };
+		7E52755424210DDE0075AB3D /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52755324210DDE0075AB3D /* FormView.swift */; };
+		7E52755724211D580075AB3D /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52755624211D580075AB3D /* ApplicationState.swift */; };
+		7E52755924226BC60075AB3D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52755824226BC60075AB3D /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,9 @@
 		7E5275402420F71B0075AB3D /* MetaForm_ShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaForm_ShowcaseUITests.swift; sourceTree = "<group>"; };
 		7E5275422420F71B0075AB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E52754E2420F7410075AB3D /* swift-metaform */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "swift-metaform"; path = "../../swift-metaform"; sourceTree = "<group>"; };
+		7E52755324210DDE0075AB3D /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		7E52755624211D580075AB3D /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		7E52755824226BC60075AB3D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E527551242108E40075AB3D /* MetaForm in Frameworks */,
+				7E31FE21242CE2F20077FF5F /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,7 @@
 				7E52753F2420F71B0075AB3D /* MetaForm ShowcaseUITests */,
 				7E52751C2420F71A0075AB3D /* Products */,
 				7E52754E2420F7410075AB3D /* swift-metaform */,
+				7E52754F242108E40075AB3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +112,8 @@
 		7E52751D2420F71A0075AB3D /* MetaForm Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				7E52755524211D420075AB3D /* Models */,
+				7E52755224210DB40075AB3D /* Views */,
 				7E52751E2420F71A0075AB3D /* AppDelegate.swift */,
 				7E5275202420F71A0075AB3D /* SceneDelegate.swift */,
 				7E5275222420F71A0075AB3D /* ContentView.swift */,
@@ -138,6 +151,30 @@
 			path = "MetaForm ShowcaseUITests";
 			sourceTree = "<group>";
 		};
+		7E52754F242108E40075AB3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E52755224210DB40075AB3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E52755324210DDE0075AB3D /* FormView.swift */,
+				7E52755824226BC60075AB3D /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E52755524211D420075AB3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E52755624211D580075AB3D /* ApplicationState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +191,10 @@
 			dependencies = (
 			);
 			name = "MetaForm Showcase";
+			packageProductDependencies = (
+				7E527550242108E40075AB3D /* MetaForm */,
+				7E31FE20242CE2F20077FF5F /* IQKeyboardManagerSwift */,
+			);
 			productName = "MetaForm Showcase";
 			productReference = 7E52751B2420F71A0075AB3D /* MetaForm Showcase.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 7E5275122420F71A0075AB3D;
+			packageReferences = (
+				7E31FE1F242CE2F20077FF5F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 7E52751C2420F71A0075AB3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,8 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E52755424210DDE0075AB3D /* FormView.swift in Sources */,
 				7E52751F2420F71A0075AB3D /* AppDelegate.swift in Sources */,
+				7E52755724211D580075AB3D /* ApplicationState.swift in Sources */,
 				7E5275212420F71A0075AB3D /* SceneDelegate.swift in Sources */,
+				7E52755924226BC60075AB3D /* QuestionView.swift in Sources */,
 				7E5275232420F71A0075AB3D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +643,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E31FE1F242CE2F20077FF5F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E31FE20242CE2F20077FF5F /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E31FE1F242CE2F20077FF5F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		7E527550242108E40075AB3D /* MetaForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MetaForm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E5275132420F71A0075AB3D /* Project object */;
 }
