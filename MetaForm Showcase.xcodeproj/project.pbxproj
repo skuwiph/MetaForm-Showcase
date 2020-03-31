@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7E31FE21242CE2F20077FF5F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E31FE20242CE2F20077FF5F /* IQKeyboardManagerSwift */; };
+		7E31FE23242E04060077FF5F /* MFControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31FE22242E04060077FF5F /* MFControl.swift */; };
+		7E31FE25242E04580077FF5F /* MetaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31FE24242E04580077FF5F /* MetaFormViewController.swift */; };
+		7E31FE27243248970077FF5F /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31FE26243248970077FF5F /* NextButton.swift */; };
+		7E31FE2924324B1B0077FF5F /* PreviousButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31FE2824324B1B0077FF5F /* PreviousButton.swift */; };
 		7E52751F2420F71A0075AB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52751E2420F71A0075AB3D /* AppDelegate.swift */; };
 		7E5275212420F71A0075AB3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5275202420F71A0075AB3D /* SceneDelegate.swift */; };
 		7E5275232420F71A0075AB3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5275222420F71A0075AB3D /* ContentView.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E31FE22242E04060077FF5F /* MFControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFControl.swift; sourceTree = "<group>"; };
+		7E31FE24242E04580077FF5F /* MetaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaFormViewController.swift; sourceTree = "<group>"; };
+		7E31FE26243248970077FF5F /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		7E31FE2824324B1B0077FF5F /* PreviousButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousButton.swift; sourceTree = "<group>"; };
 		7E52751B2420F71A0075AB3D /* MetaForm Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetaForm Showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E52751E2420F71A0075AB3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E5275202420F71A0075AB3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +171,10 @@
 			children = (
 				7E52755324210DDE0075AB3D /* FormView.swift */,
 				7E52755824226BC60075AB3D /* QuestionView.swift */,
+				7E31FE22242E04060077FF5F /* MFControl.swift */,
+				7E31FE24242E04580077FF5F /* MetaFormViewController.swift */,
+				7E31FE26243248970077FF5F /* NextButton.swift */,
+				7E31FE2824324B1B0077FF5F /* PreviousButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,6 +327,10 @@
 			files = (
 				7E52755424210DDE0075AB3D /* FormView.swift in Sources */,
 				7E52751F2420F71A0075AB3D /* AppDelegate.swift in Sources */,
+				7E31FE2924324B1B0077FF5F /* PreviousButton.swift in Sources */,
+				7E31FE25242E04580077FF5F /* MetaFormViewController.swift in Sources */,
+				7E31FE27243248970077FF5F /* NextButton.swift in Sources */,
+				7E31FE23242E04060077FF5F /* MFControl.swift in Sources */,
 				7E52755724211D580075AB3D /* ApplicationState.swift in Sources */,
 				7E5275212420F71A0075AB3D /* SceneDelegate.swift in Sources */,
 				7E52755924226BC60075AB3D /* QuestionView.swift in Sources */,

@@ -10,33 +10,38 @@ import SwiftUI
 import MetaForm
 
 struct QuestionView: View {
+    @Binding var question: MFQuestion?
     @EnvironmentObject var applicationState: ApplicationState
-
+    
     var body: some View {
-        VStack {
-            Spacer()
-            Group {
-                Text("This is a question text. It should be capable of wrapping, and should be of a reasonable length")
-                    .font(.title)
-                    .padding(10)
-                    .foregroundColor(Color.init(red: 223/255, green: 220/255, blue: 240/255))
-                Spacer()
-                Text("This is a footnote and should be shorter text")
-                    .font(.system(size: 14, weight: .light, design: .default))
-                .padding(10)
-            }
-            .background(Color(red: 24/255, green: 24/255, blue: 80/255, opacity: 0.6))
-            .edgesIgnoringSafeArea(.all)
-            Spacer()
-        }
+        ZStack {
             
+            Color(red: 232/255, green: 234/255, blue: 240/255)
+            VStack(alignment: .center, spacing: 15) {
+                Text(String(question?.caption ?? "Nothing"))
+                    .font(.headline)
+                    .padding(25)
+                    .foregroundColor(Color.init(red: 100/255, green: 100/255, blue: 200/255))
+//                MFControl()
+                Group {
+                    if question?.captionFootnote != nil {
+                    
+                        Text(String(question?.captionFootnote ?? "") )
+                            .font(.system(size: 14, weight: .light, design: .default))
+                            .padding(15)
+                            .foregroundColor(Color.init(red: 100/255, green: 100/255, blue: 200/255))
+                    }
+                }
+            }
+        }
     }
     
 }
 
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionView()
+        let q = MFQuestion(sectionId: 1, name: "Test", caption: "This is a caption")
+        return QuestionView(question: .constant(q))
     }
 }
 

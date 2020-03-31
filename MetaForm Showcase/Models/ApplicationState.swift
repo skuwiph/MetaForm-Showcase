@@ -11,4 +11,6 @@ import MetaForm
 
 class ApplicationState: ObservableObject {
     var currentForm: MFForm?
+    var rules: BusinessRules = BusinessRules()
+    var currentQuestionIndex: Int = -1
 }
